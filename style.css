@@ -1,0 +1,57 @@
+/* red = #FF5E5B 
+gray = #D8D8D8
+cream = #FFFFEA
+light blue = #78CCCB
+yellow = #FFED66 */
+
+body {
+    background-color: #FFED66;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 0;
+}
+
+main {
+    text-align: center;
+}
+
+.header {
+    background-color: #FF5E5B;
+    border-radius: 20px 20px 0 0;
+    width: 1079px;
+    height: 94px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: 'Lobster', cursive;
+    font-size: 70px;
+    color: #FFED66;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    padding-top: 14px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 80px;
+    width: 1079px;
+    height: 1079px;
+    background-color: #FF5E5B;
+    border-radius: 0 0 20px 20px;
+}
+
+.controls > div {
+    display: flex;
+    align-items: center;
+}
+
+.controls > div > p {
+    color: #FFFFEA;
+    font-weight: 700;
+    margin: 0;
+}
+
