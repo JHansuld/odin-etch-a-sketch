@@ -1,57 +1,55 @@
-/* red = #FF5E5B 
-gray = #D8D8D8
-cream = #FFFFEA
-light blue = #78CCCB
-yellow = #FFED66 */
-
-body {
-    background-color: #FFED66;
-    font-family: 'Montserrat', sans-serif;
-    padding: 50px 0;
+#container {
+    width: 660px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
 }
 
-main {
-    text-align: center;
+#sketch-pad {
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
 }
 
-.header {
-    background-color: #FF5E5B;
-    border-radius: 20px 20px 0 0;
-    width: 1079px;
-    height: 94px;
-    margin: 0 auto;
+.grid-square {
+    width: 30px;
+    height: 20px;
+    float: left;
+    background-color: white;
 }
 
-.heading {
-    font-family: 'Lobster', cursive;
-    font-size: 70px;
-    color: #FFED66;
-    text-align: center;
-    margin: 0;
-    line-height: 1;
-    padding-top: 14px;
+#left-slider {
+    width: 30px;
+    height: 400px;
+    border-right: 1px solid black;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
 }
 
-.controls {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0 auto;
-    padding: 0 80px;
-    width: 1079px;
-    height: 1079px;
-    background-color: #FF5E5B;
-    border-radius: 0 0 20px 20px;
+#right-slider {
+    width: 30px;
+    height: 400px;
+    border-left: 1px solid black;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
 }
 
-.controls > div {
-    display: flex;
-    align-items: center;
+#reset {
+    width: 660px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
 }
 
-.controls > div > p {
-    color: #FFFFEA;
-    font-weight: 700;
-    margin: 0;
+.dot {
+    width: 30px;
+    height: 20px;
+    background-color: gray;
+    position: absolute;
 }
-
