@@ -2,20 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Etch and Scetch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap">
+  <title>Etch and Scetch</title>
 </head>
 
 <body>
-<div id="container">
-  <div id="sketch-pad"></div>
-  <div id="left-slider"></div>
-  <div id="right-slider"></div>
-  <div id="reset"></div>
-</div>
+  <header class="header">
+    <h1 class="heading">Etch A Sketch</h1>
+  </header>
+
+  <main>
+    <div id="grid-container" class="medium-grid-default"></div>
+
+    <div class="controls">
+      <div>
+        <p>Grid density: </p>
+        <button class="size small">Small</button>
+        <button class="size medium">Medium</button>
+        <button class="size big">Big</button>
+      </div>
+      <div class="mode-controls">
+        <p>Mode: </p>
+        <button class="mode classic">Classic</button>
+        <button class="mode modern">Modern</button>
+        <button class="mode psychedelic">Psychedelic</button>
+        <button class="mode lighten">Lighten</button>
+        <button class="mode darken">Darken</button>
+        <button class="mode eraser">Eraser</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      Built by
+      <a class="footer-link" href="https://github.com/JHansuld/" target="_blank">JHansuld</a> | <a class="footer-link"
+        href="https://github.com/JHansuld/odin-etch-a-sketch" target="_blank">Source</a>
+    </footer>
 
     <script src="main.js"></script>
 </body>
