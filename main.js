@@ -45,13 +45,6 @@ function startPainting(pen) {
                 const randomColor = Math.floor(Math.random() * magicPallete.length);
                 e.target.style.opacity = 1;
                 e.target.style.backgroundColor = magicPallete[randomColor];
-                // } else if (pen === 'lighten') {
-                //     // lighten the shade by 1
-                //     let shade = document.getElementById('grid-container').style.backgroundColor;
-                //     e.target.style.backgroundColor = (shade & 0x7f7f7f) << 1;
-                //     e.target.style.opacity = 1;
-                // } else if (pen === 'darken') {
-                //     // darken the shade by 1 increment
             } else if (pen === 'eraser') {
                 // change background to white
                 e.target.style.backgroundColor = '#D8D8D8';
@@ -122,15 +115,6 @@ function changepen() {
                 selectButton(selection);
                 currentpen = 'eraser';
             }
-            // else if (selection.classList.contains('lighten')) {
-            //     startPainting('lighten');
-            //     selectButton(selection);
-            //     currentpen = 'lighten';
-            // } else if (selection.classList.contains('darken')) {
-            //     startPainting('darken');
-            //     selectButton(selection);
-            //     currentpen = 'darken';
-            // }
         });
     });
 }
